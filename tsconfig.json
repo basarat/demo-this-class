@@ -1,33 +1,5 @@
 {
   "compilerOptions": {
-    "noImplicitThis": true,
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     "lib": [
       "es6",
       "dom"

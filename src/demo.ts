@@ -1,10 +1,12 @@
-function foo(this: any) {
-  console.log({
-    'global?': this === global,
-    'bar?': this === bar
-  });
+class Foo {
+  name = 'Hello world';
+  log = () => {
+    console.log(this.name);
+  }
 }
 
-const bar = { foo };
-bar.foo(); // bar 
-foo(); // global
+const foo = new Foo();
+foo.log();
+
+const { log } = foo;
+log();
